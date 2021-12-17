@@ -13,7 +13,7 @@ from streamlit.elements import markdown
 
 # Import Dataset and JSON file
 dataset_minyak = pd.read_csv('https://raw.githubusercontent.com/HabilLuthfiRahman/UAS_12219021_HabilLuthfiRahman/main/produksi_minyak_mentah.csv')
-with open('https://raw.githubusercontent.com/HabilLuthfiRahman/UAS_12219021_HabilLuthfiRahman/main/kode_negara_lengkap.json') as url:
+with urllib.request.urlopen('https://raw.githubusercontent.com/HabilLuthfiRahman/UAS_12219021_HabilLuthfiRahman/main/kode_negara_lengkap.json') as url:
   json_data = json.loads(url.read().decode())
 nama_negara_pair = dict()
 kode_negara_pair = dict()
