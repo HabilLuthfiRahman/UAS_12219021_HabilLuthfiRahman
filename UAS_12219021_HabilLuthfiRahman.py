@@ -102,7 +102,7 @@ mid_col.pyplot(fig)
 ############### lower left column ###############
 
 # Soal C
-# Tampilkan B jumlah negara yang memiliki Produksi Kumulatif tertinggi
+
 group_df = dataset_minyak.groupby(['kode_negara'])
 cumm = group_df['produksi'].sum().to_frame(name ='cumm').reset_index()
 
@@ -144,8 +144,6 @@ left_col.dataframe(display_table)
 ############### lower mid column ###############
 
 # Soal D
-# Didapat dengan menggabungkan jawaban B dan C
-# Filter untuk tahun T
 df_year = dataset_minyak[dataset_minyak.tahun == t_tahun_info]
 df_year = df_year.sort_values(by=['produksi'], ascending=False)
 
