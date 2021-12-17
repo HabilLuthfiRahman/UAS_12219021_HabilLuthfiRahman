@@ -26,7 +26,7 @@ for i in range(len(json_data)):
 ############### Title ###############
 
 st.set_page_config(layout="wide")  # this needs to be the first Streamlit command called
-st.title("Tugas Besar")
+st.title("UAS 2021")
 
 ############### Title ###############
 
